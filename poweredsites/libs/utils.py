@@ -47,7 +47,7 @@ def parse_config_file(path):
     execfile(path, config, config)
     for name in config:
         if name in options:
-            options[name].set(config[name])
+            options._options[name].set(config[name])
         else:
             define(name, config[name])
 

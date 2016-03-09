@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d249a07a-7c3f-4cdd-8c6f-cb660d33da43</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>app.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+    <PythonWsgiHandler>app.wsgi_app</PythonWsgiHandler>
+    <Name>poweredsites</Name>
+    <RootNamespace>poweredsites</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="db\" />
+    <Folder Include="forms\" />
+    <Folder Include="handlers\" />
+    <Folder Include="libs\" />
+    <Folder Include="static\" />
+    <Folder Include="static\css\" />
+    <Folder Include="static\css\blueprint\" />
+    <Folder Include="static\css\blueprint\src\" />
+    <Folder Include="static\css\images\" />
+    <Folder Include="static\img\" />
+    <Folder Include="static\js\" />
+    <Folder Include="static\snapshot\" />
+    <Folder Include="templates\" />
+    <Folder Include="templates\admin\" />
+    <Folder Include="templates\blog\" />
+    <Folder Include="templates\chat\" />
+    <Folder Include="templates\modules\" />
+    <Folder Include="templates\project\" />
+    <Folder Include="templates\site\" />
+    <Folder Include="templates\user\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app.py" />
+    <Compile Include="config.py" />
+    <Compile Include="db\access.py" />
+    <Compile Include="db\caches.py" />
+    <Compile Include="db\mongodb.py" />
+    <Compile Include="db\mysql.py" />
+    <Compile Include="db\__init__.py" />
+    <Compile Include="forms\base.py" />
+    <Compile Include="forms\profile.py" />
+    <Compile Include="forms\submit.py" />
+    <Compile Include="forms\__init__.py" />
+    <Compile Include="handlers\admin.py" />
+    <Compile Include="handlers\blog.py" />
+    <Compile Include="handlers\chat.py" />
+    <Compile Include="handlers\front.py" />
+    <Compile Include="handlers\help.py" />
+    <Compile Include="handlers\project.py" />
+    <Compile Include="handlers\site.py" />
+    <Compile Include="handlers\user.py" />
+    <Compile Include="handlers\__init__.py" />
+    <Compile Include="libs\alexarank.py" />
+    <Compile Include="libs\cache.py" />
+    <Compile Include="libs\const.py" />
+    <Compile Include="libs\decorators.py" />
+    <Compile Include="libs\exceptions.py" />
+    <Compile Include="libs\handler.py" />
+    <Compile Include="libs\importlib.py" />
+    <Compile Include="libs\mail.py" />
+    <Compile Include="libs\pagerank.py" />
+    <Compile Include="libs\pagination.py" />
+    <Compile Include="libs\snapshot.py" />
+    <Compile Include="libs\utils.py" />
+    <Compile Include="libs\webkit2png.py" />
+    <Compile Include="libs\__init__.py" />
+    <Compile Include="urls.py" />
+    <Compile Include="__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="crontab" />
+    <Content Include="static\css\base.css" />
+    <Content Include="static\css\blueprint\ie.css" />
+    <Content Include="static\css\blueprint\screen.css" />
+    <Content Include="static\css\blueprint\src\grid.png" />
+    <Content Include="static\css\highlight.css" />
+    <Content Include="static\css\images\wmd-buttons-dark.png" />
+    <Content Include="static\css\images\wmd-buttons-dark.psd" />
+    <Content Include="static\css\images\wmd-buttons.png" />
+    <Content Include="static\css\images\wmd-buttons.psd" />
+    <Content Include="static\css\markedit.css" />
+    <Content Include="static\css\wmd.css" />
+    <Content Include="static\favicon.ico" />
+    <Content Include="static\img\content-bottom.gif" />
+    <Content Include="static\img\content-top.gif" />
+    <Content Include="static\img\content.gif" />
+    <Content Include="static\img\facebook.gif" />
+    <Content Include="static\img\facebook.png" />
+    <Content Include="static\img\favicon.ico" />
+    <Content Include="static\img\friendfeed.gif" />
+    <Content Include="static\img\friendfeed.png" />
+    <Content Include="static\img\google.gif" />
+    <Content Include="static\img\google.png" />
+    <Content Include="static\img\grippie.png" />
+    <Content Include="static\img\header-bottom-bg.gif" />
+    <Content Include="static\img\header-bottom-bg.png" />
+    <Content Include="static\img\header-bottom.gif" />
+    <Content Include="static\img\header-bottom.png" />
+    <Content Include="static\img\header_bg.gif" />
+    <Content Include="static\img\iconset.jpg" />
+    <Content Include="static\img\jquery.jpg" />
+    <Content Include="static\img\logo-bg.gif" />
+    <Content Include="static\img\logo-bg.png" />
+    <Content Include="static\img\logo.gif" />
+    <Content Include="static\img\logo.png" />
+    <Content Include="static\img\logo20090.gif" />
+    <Content Include="static\img\logo20090.png" />
+    <Content Include="static\img\logo64.gif" />
+    <Content Include="static\img\logo64.png" />
+    <Content Include="static\img\mongodb.gif" />
+    <Content Include="static\img\mongodb.png" />
+    <Content Include="static\img\nav-shadow.gif" />
+    <Content Include="static\img\python.gif" />
+    <Content Include="static\img\tornado.gif" />
+    <Content Include="static\img\tornado.png" />
+    <Content Include="static\img\twitter.gif" />
+    <Content Include="static\img\twitter.png" />
+    <Content Include="static\img\video.jpg" />
+    <Content Include="static\img\white.gif" />
+    <Content Include="static\img\x-click-but04.gif" />
+    <Content Include="static\js\base.js" />
+    <Content Include="static\js\highlight.js" />
+    <Content Include="static\js\markedit.js" />
+    <Content Include="static\js\showdown.js" />
+    <Content Include="static\js\user.js" />
+    <Content Include="static\js\wmd.js" />
+    <Content Include="static\robots.txt" />
+    <Content Include="static\snapshot\placeholder.txt" />
+    <Content Include="templates\404.html" />
+    <Content Include="templates\404_debug.html" />
+    <Content Include="templates\500.html" />
+    <Content Include="templates\500_debug.html" />
+    <Content Include="templates\500_email.html" />
+    <Content Include="templates\admin\index.html" />
+    <Content Include="templates\admin\newusers.html" />
+    <Content Include="templates\background.css" />
+    <Content Include="templates\base.html" />
+    <Content Include="templates\blog\archive.html" />
+    <Content Include="templates\blog\blog.html" />
+    <Content Include="templates\blog\compose.html" />
+    <Content Include="templates\blog\entry.html" />
+    <Content Include="templates\blog\feed.xml" />
+    <Content Include="templates\blog\index.html" />
+    <Content Include="templates\blog\neighbour_entries.html" />
+    <Content Include="templates\chat\index.html" />
+    <Content Include="templates\chat\message.html" />
+    <Content Include="templates\chat\projects.html" />
+    <Content Include="templates\donate.html" />
+    <Content Include="templates\feed.xml" />
+    <Content Include="templates\footer.html" />
+    <Content Include="templates\header.html" />
+    <Content Include="templates\help.html" />
+    <Content Include="templates\index.html" />
+    <Content Include="templates\modules\chat_projects.html" />
+    <Content Include="templates\modules\entry.html" />
+    <Content Include="templates\modules\hot_projects.html" />
+    <Content Include="templates\modules\side_projects.html" />
+    <Content Include="templates\modules\websites.html" />
+    <Content Include="templates\modules\websites_index.html" />
+    <Content Include="templates\modules\websites_opensource.html" />
+    <Content Include="templates\modules\websites_top.html" />
+    <Content Include="templates\modules\website_powereds.html" />
+    <Content Include="templates\opensource.html" />
+    <Content Include="templates\project\index.html" />
+    <Content Include="templates\project\main.html" />
+    <Content Include="templates\project\opensource.html" />
+    <Content Include="templates\project\submit.html" />
+    <Content Include="templates\project\submit_pre.html" />
+    <Content Include="templates\project\top.html" />
+    <Content Include="templates\search.html" />
+    <Content Include="templates\search_form.html" />
+    <Content Include="templates\site\neighbour_sites.html" />
+    <Content Include="templates\site\site.html" />
+    <Content Include="templates\site\submit.html" />
+    <Content Include="templates\site\submit_base.html" />
+    <Content Include="templates\site\submit_powered.html" />
+    <Content Include="templates\site\submit_pre.html" />
+    <Content Include="templates\submit.html" />
+    <Content Include="templates\submit_links.html" />
+    <Content Include="templates\top.html" />
+    <Content Include="templates\user\login.html" />
+    <Content Include="templates\user\profile.html" />
+    <Content Include="templates\user\user.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

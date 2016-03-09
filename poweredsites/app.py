@@ -62,7 +62,8 @@ class Application(web.Application):
             self.add_handlers(sub_handler[0], sub_handler[1])
 
 def main():
-    parse_config_file("/mnt/ebs/conf/sites/poweredsites.conf")
+    basedir = os.path.dirname(os.path.abspath(__file__))
+    parse_config_file( os.path.join(basedir, 'config.py') )
     tornado.options.parse_command_line()
 
     http_server = HTTPServer(Application(), xheaders=True)
